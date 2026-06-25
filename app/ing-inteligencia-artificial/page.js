@@ -497,142 +497,125 @@ export default function IAPage() {
         </div>
       </section>
 
-      {/* ── MAESTRÍA ACELERADA ── */}
+      {/* ── ALIANZA ASU — acordeón colapsable ── */}
       <section style={{ padding:"4rem 2rem", background:"#fff", borderTop:"3px solid #f59700" }}>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
-          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3rem", alignItems:"center" }} className="asu-chat-grid">
-            <div>
-              <div style={{ display:"flex", alignItems:"center", gap:"1rem", marginBottom:"1rem", flexWrap:"wrap" }}>
-                <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333" }}>
-                  Maestría acelerada con
-                </h2>
-                <img
-                  src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png"
-                  alt="ASU"
-                  style={{ height:"44px", objectFit:"contain" }}
-                />
-              </div>
-              <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"1.5rem" }} />
-              <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1.2rem" }}>
-                Tienes la oportunidad de acelerar tus estudios de maestría durante tu licenciatura, a través de revalidación de 2 materias con <strong>Thunderbird School of Global Management</strong>.
-              </p>
-              <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8 }}>
-                Educación universitaria de calidad sin fronteras. Plataforma digital, docentes expertos y titulación oficial UAG para impulsar tu carrera desde donde estés.
-              </p>
-            </div>
-            {/* Card destacada */}
-            <div style={{ background:"#7a2531", borderRadius:"16px", padding:"2.5rem", color:"#fff" }}>
-              <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.78rem", fontWeight:700, color:"#f59700", letterSpacing:"0.12em", textTransform:"uppercase", marginBottom:"1rem" }}>BENEFICIO EXCLUSIVO</p>
-              <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"2.5rem", fontWeight:900, lineHeight:1, color:"#fff", marginBottom:"0.4rem" }}>2</p>
-              <p style={{ fontSize:"0.95rem", color:"rgba(255,255,255,0.85)", marginBottom:"1.5rem", lineHeight:1.5 }}>materias revalidables para tu maestría desde la licenciatura</p>
-              <div style={{ borderTop:"1px solid rgba(255,255,255,0.15)", paddingTop:"1.2rem" }}>
-                <p style={{ fontSize:"0.84rem", color:"rgba(255,255,255,0.7)", lineHeight:1.6 }}>
-                  A través de <strong style={{ color:"#f59700" }}>Thunderbird School of Global Management</strong>, una de las escuelas de negocios más reconocidas del mundo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── INGLÉS + MAYA ── */}
-      <section style={{ padding:"4rem 2rem", background:"#f9f9f9", borderTop:"3px solid #f59700" }}>
-        <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
-          {/* Header con logo ASU oficial */}
-          <div style={{ marginBottom:"0.5rem" }}>
-            <div style={{ display:"flex", alignItems:"center", gap:"1.2rem", flexWrap:"wrap", marginBottom:"0.4rem" }}>
-              <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333" }}>
-                Certifica tu inglés con
-              </h2>
-              <img
-                src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png"
-                alt="Arizona State University"
-                style={{ height:"52px", objectFit:"contain" }}
-              />
-            </div>
-            <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.1rem,2.5vw,1.6rem)", fontWeight:700, color:"#555" }}>
-              Incluido sin costo adicional
-            </p>
+          {/* Header */}
+          <div style={{ marginBottom:"2rem" }}>
+            <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.14em", textTransform:"uppercase", marginBottom:"0.5rem" }}>ALIANZA INTERNACIONAL</p>
+            <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333" }}>
+              Lo que obtienes con <span style={{ color:"#7a2531" }}>Arizona State University</span>
+            </h2>
+            <div style={{ width:"60px", height:"3px", background:"#f59700", marginTop:"0.6rem" }} />
           </div>
-          <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"2rem" }} />
 
-          <div className="asu-chat-grid" style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3rem", alignItems:"center" }}>
-            <div>
-              <p style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
-                Tu programa incluye 14 niveles de inglés con certificación de Arizona State University, sin costo adicional. <strong>Maya</strong> es la inteligencia artificial que guía tu práctica y conversación disponible las 24 horas.
-              </p>
-              <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem", marginBottom:"1.8rem" }}>
-                {["14 niveles de inglés certificados por ASU","Inteligencia Artificial MAYA disponible 24/7","Certificación internacional sin costo adicional","Práctica de conversación guiada por IA"].map((t,i)=>(
-                  <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.7rem" }}>
-                    <span style={{ color:"#f59700", fontWeight:700, fontSize:"1rem" }}>✓</span>
-                    <span style={{ fontSize:"0.88rem", color:"#555" }}>{t}</span>
+          {/* Acordeón */}
+          <div style={{ display:"flex", flexDirection:"column", gap:"0.6rem", marginBottom:"2rem" }}>
+            {[
+              {
+                titulo:"Maestría acelerada con Arizona State University",
+                contenido: (
+                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"2rem" }} className="asu-chat-grid">
+                    <div>
+                      <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1rem" }}>
+                        Tienes la oportunidad de acelerar tus estudios de maestría durante tu licenciatura, a través de revalidación de 2 materias con <strong>Thunderbird School of Global Management</strong>.
+                      </p>
+                      <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8 }}>
+                        Educación universitaria de calidad sin fronteras. Plataforma digital, docentes expertos y titulación oficial UAG para impulsar tu carrera desde donde estés.
+                      </p>
+                    </div>
+                    <div style={{ background:"#f9f9f9", borderRadius:"12px", padding:"1.5rem", border:"1px solid #eee" }}>
+                      <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.8rem" }}>BENEFICIO EXCLUSIVO</p>
+                      <div style={{ display:"flex", alignItems:"center", gap:"1rem", marginBottom:"0.8rem" }}>
+                        <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"3rem", fontWeight:900, color:"#7a2531", lineHeight:1 }}>2</span>
+                        <span style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.4 }}>materias revalidables para tu maestría desde la licenciatura</span>
+                      </div>
+                      <p style={{ fontSize:"0.82rem", color:"#888", lineHeight:1.6, borderTop:"1px solid #eee", paddingTop:"0.8rem" }}>
+                        A través de <strong style={{ color:"#7a2531" }}>Thunderbird School of Global Management</strong>, una de las escuelas de negocios más reconocidas del mundo.
+                      </p>
+                    </div>
                   </div>
-                ))}
-              </div>
-              {/* Botón Conoce nuestra alianza ASU */}
-              <button
-                onClick={()=>setVideoOpen(true)}
-                className="btn-red"
-                style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", padding:"0.75rem 1.6rem", fontSize:"0.88rem" }}>
-                ▶ Conoce nuestra alianza ASU
-              </button>
-            </div>
-
-            {/* Card chat Maya */}
-            <div style={{ background:"#fff", border:"1px solid #eee", borderRadius:"8px", padding:"1.8rem", boxShadow:"0 4px 20px rgba(0,0,0,0.06)", position:"relative" }}>
-              {/* Espectro de audio en esquina superior derecha */}
-              <div style={{ position:"absolute", top:"1rem", right:"1rem", cursor:"pointer" }}
-                onMouseEnter={e=>{ audioRef.current?.play(); e.currentTarget.querySelector(".maya-bars").style.opacity="1"; }}
-                onMouseLeave={e=>{ const a=audioRef.current; if(a){a.pause();a.currentTime=0;} e.currentTarget.querySelector(".maya-bars").style.opacity="0.35"; }}>
-                <div style={{ width:"44px", height:"44px", borderRadius:"50%", background:"#7a2531", border:"2px solid #f59700", display:"flex", alignItems:"center", justifyContent:"center", boxShadow:"0 2px 8px rgba(122,37,49,0.3)" }}>
-                  <div className="maya-bars" style={{ display:"flex", gap:"2px", alignItems:"center", height:"22px", opacity:0.35, transition:"opacity 0.3s" }}>
-                    {[10,18,12,20,14,16,10].map((_,i)=>(
-                      <div key={i} style={{ width:"3px", borderRadius:"2px", background:"#f59700", animation:`mayaBar${i%5} ${0.55+(i*0.07)}s ease-in-out infinite` }} />
-                    ))}
+                )
+              },
+              {
+                titulo:"Certifica tu inglés con Arizona State University — sin costo adicional",
+                contenido: (
+                  <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3rem", alignItems:"center" }} className="asu-chat-grid">
+                    <div>
+                      <p style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
+                        Tu programa incluye 14 niveles de inglés con certificación de Arizona State University, sin costo adicional. <strong>Maya</strong> es la inteligencia artificial que guía tu práctica y conversación disponible las 24 horas.
+                      </p>
+                      <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem" }}>
+                        {["14 niveles de inglés certificados por ASU","Inteligencia Artificial MAYA disponible 24/7","Certificación internacional sin costo adicional","Práctica de conversación guiada por IA"].map((t,i)=>(
+                          <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.7rem" }}>
+                            <span style={{ color:"#f59700", fontWeight:700, fontSize:"1rem" }}>✓</span>
+                            <span style={{ fontSize:"0.88rem", color:"#555" }}>{t}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div style={{ background:"#fff", border:"1px solid #eee", borderRadius:"8px", padding:"1.8rem", boxShadow:"0 4px 20px rgba(0,0,0,0.06)" }}>
+                      <div style={{ display:"flex", alignItems:"center", gap:"0.8rem", marginBottom:"1.2rem", paddingBottom:"1rem", borderBottom:"1px solid #f0f0f0" }}>
+                        <div style={{ width:"40px", height:"40px", borderRadius:"8px", background:"#7a2531", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"1.2rem", flexShrink:0 }}>🤖</div>
+                        <div>
+                          <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.9rem", color:"#333" }}>Maya IA</p>
+                          <p style={{ fontSize:"0.72rem", color:"#888" }}>Asistente de inglés UAG · ASU · Disponible 24/7</p>
+                        </div>
+                        <div style={{ position:"relative", marginLeft:"auto", cursor:"pointer" }}
+                          onMouseEnter={e=>{ audioRef.current?.play(); }}
+                          onMouseLeave={e=>{ const a=audioRef.current; if(a){a.pause();a.currentTime=0;} }}>
+                          <div style={{ width:"40px", height:"40px", borderRadius:"50%", background:"#7a2531", border:"2px solid #f59700", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                            <div style={{ display:"flex", gap:"2px", alignItems:"center", height:"18px" }}>
+                              {[10,16,10,18,12].map((_,i)=>(
+                                <div key={i} style={{ width:"3px", borderRadius:"2px", background:"#f59700", height:`${[10,16,10,18,12][i]}px`, animation:`mayaBar${i%5} ${0.55+(i*0.07)}s ease-in-out infinite` }} />
+                              ))}
+                            </div>
+                          </div>
+                          <audio ref={audioRef} preload="auto"><source src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/UAG_1.mp3" type="audio/mpeg" /></audio>
+                        </div>
+                      </div>
+                      {[["Maya","¡Hola! Hoy practicaremos listening. ¿Listo?",false],["Tú","Yes, I'm ready!",true],["Maya","Great! Describe your ideal workplace in 3 sentences.",false]].map(([who,msg,isMe],i)=>(
+                        <div key={i} style={{ display:"flex", justifyContent:isMe?"flex-end":"flex-start", marginBottom:"0.65rem" }}>
+                          <div style={{ maxWidth:"82%", padding:"0.55rem 0.85rem", borderRadius:isMe?"12px 12px 4px 12px":"12px 12px 12px 4px", background:isMe?"#7a2531":"#f0f0f0", color:isMe?"#fff":"#333", fontSize:"0.8rem", lineHeight:1.4 }}>{msg}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )
+              }
+            ].map((item, i) => {
+              const isOpen = hoveredC === `asu-${i}`;
+              return (
+                <div key={i} style={{ border:`1.5px solid ${isOpen?"rgba(122,37,49,0.4)":"#eee"}`, borderRadius:"12px", overflow:"hidden", transition:"border-color 0.25s", background:"#fff" }}>
+                  <button
+                    onClick={()=>setHoveredC(isOpen ? null : `asu-${i}`)}
+                    style={{ width:"100%", display:"flex", alignItems:"center", justifyContent:"space-between", padding:"1.2rem 1.5rem", background:isOpen?"#7a2531":"#fff", border:"none", cursor:"pointer", gap:"1rem", textAlign:"left", transition:"background 0.25s" }}>
+                    <span style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.95rem", color:isOpen?"#fff":"#333" }}>{item.titulo}</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={isOpen?"#fff":"#7a2531"} strokeWidth="2.5" strokeLinecap="round"
+                      style={{ flexShrink:0, transition:"transform 0.25s", transform:isOpen?"rotate(180deg)":"rotate(0)" }}>
+                      <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                  </button>
+                  <div style={{ maxHeight:isOpen?"600px":"0", overflow:"hidden", transition:"max-height 0.45s cubic-bezier(0.16,1,0.3,1)" }}>
+                    <div style={{ padding:"1.5rem" }}>
+                      {item.contenido}
+                    </div>
                   </div>
                 </div>
-                <audio ref={audioRef} preload="auto"><source src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/UAG_1.mp3" type="audio/mpeg" /></audio>
-              </div>
-              <div style={{ display:"flex", alignItems:"center", gap:"0.8rem", marginBottom:"1.2rem", paddingBottom:"1rem", borderBottom:"1px solid #f0f0f0" }}>
-                <div style={{ width:"40px", height:"40px", borderRadius:"8px", background:"#7a2531", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"1.2rem" }}>🤖</div>
-                <div>
-                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.9rem", color:"#333" }}>Maya IA</p>
-                  <p style={{ fontSize:"0.72rem", color:"#888" }}>Asistente de inglés UAG · ASU · Disponible 24/7</p>
-                </div>
-              </div>
-              {[["Maya","¡Hola! Hoy practicaremos listening. ¿Listo?",false],["Tú","Yes, I'm ready!",true],["Maya","Great! Describe your ideal workplace in 3 sentences.",false]].map(([who,msg,isMe],i)=>(
-                <div key={i} style={{ display:"flex", justifyContent:isMe?"flex-end":"flex-start", marginBottom:"0.65rem" }}>
-                  <div style={{ maxWidth:"82%", padding:"0.55rem 0.85rem", borderRadius:isMe?"12px 12px 4px 12px":"12px 12px 12px 4px", background:isMe?"#7a2531":"#f0f0f0", color:isMe?"#fff":"#333", fontSize:"0.8rem", lineHeight:1.4 }}>{msg}</div>
-                </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        </div>
-      </section>
 
-      {/* Modal video alianza ASU */}
-      {videoOpen && (
-        <div onClick={()=>setVideoOpen(false)} style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.82)", zIndex:1000, display:"flex", alignItems:"center", justifyContent:"center", padding:"1.5rem" }}>
-          <div onClick={e=>e.stopPropagation()} style={{ position:"relative", width:"100%", maxWidth:"860px", background:"#000", borderRadius:"12px", overflow:"hidden", boxShadow:"0 24px 80px rgba(0,0,0,0.5)" }}>
-            {/* Botón cerrar */}
-            <button onClick={()=>setVideoOpen(false)}
-              style={{ position:"absolute", top:"0.8rem", right:"0.8rem", zIndex:10, background:"rgba(0,0,0,0.6)", border:"none", borderRadius:"50%", width:"36px", height:"36px", color:"#fff", fontSize:"1.1rem", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center" }}>
-              ✕
+          {/* Botón video alianza */}
+          <div style={{ textAlign:"center" }}>
+            <button onClick={()=>setVideoOpen(true)} className="btn-red"
+              style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", padding:"0.8rem 2rem", fontSize:"0.9rem" }}>
+              ▶ Conoce nuestra alianza ASU
             </button>
-            {/* YouTube embed */}
-            <div style={{ position:"relative", paddingBottom:"56.25%", height:0 }}>
-              <iframe
-                src="https://www.youtube.com/embed/LBQTOLmMmrM?autoplay=1"
-                title="Alianza UAG — Arizona State University"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ position:"absolute", top:0, left:0, width:"100%", height:"100%", border:"none" }}
-              />
-            </div>
           </div>
         </div>
-      )}
-
+      </section>
       {/* ── SOCIAL PROOF + BECAS — v2 ── */}
       <section style={{ padding:"4rem 2rem", background:"#fff", borderTop:"3px solid #f59700" }}>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
