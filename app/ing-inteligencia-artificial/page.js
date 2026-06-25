@@ -335,40 +335,34 @@ export default function IAPage() {
 
         </div>
 
-        {/* DERECHA — fondo #7a2531, texto + formulario */}
-        <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", justifyContent:"center", padding:"1.8rem 2.5rem", maxHeight:"520px", overflow:"hidden" }}>
+        {/* DERECHA — fondo #7a2531, todo en 520px sin scroll */}
+        <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", padding:"1.4rem 2rem", maxHeight:"520px", overflow:"hidden", gap:"0.5rem" }}>
 
-          {/* Logo UAG Online */}
-          <div style={{ marginBottom:"1.5rem" }}>
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"160px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
-          </div>
-
-          {/* Logo UAG Online grande */}
-          <div style={{ marginBottom:"1rem" }}>
-            <img
-              src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png"
-              alt="UAG Online"
-              style={{ height:"80px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }}
-            />
-          </div>
+          {/* Logo UAG Online — grande */}
+          <img
+            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png"
+            alt="UAG Online"
+            style={{ height:"68px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)", display:"block", flexShrink:0 }}
+          />
 
           {/* Headline */}
-          <h1 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,2.6vw,2.2rem)", fontWeight:900, color:"#fff", lineHeight:1.1, letterSpacing:"-0.02em", marginBottom:"0.8rem" }}>
+          <h1 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.05rem,1.9vw,1.55rem)", fontWeight:900, color:"#fff", lineHeight:1.1, letterSpacing:"-0.01em", flexShrink:0 }}>
             Domina el futuro tecnológico con la Ingeniería en{" "}
             <span style={{ color:"#f59700" }}>Inteligencia Artificial</span>{" "}
             Online de la UAG
           </h1>
-          <p style={{ fontSize:"0.85rem", color:"rgba(255,255,255,0.78)", lineHeight:1.5, marginBottom:"1rem" }}>
-            Diseña sistemas inteligentes, lidera proyectos de IA y posiciona tu carrera en la industria tecnológica global — sin dejar de trabajar.
+
+          <p style={{ fontSize:"0.76rem", color:"rgba(255,255,255,0.72)", lineHeight:1.4, flexShrink:0 }}>
+            Diseña sistemas inteligentes y posiciona tu carrera en la industria tecnológica global.
           </p>
 
           {/* Formulario */}
-          <div style={{ background:"rgba(255,255,255,0.08)", borderRadius:"12px", padding:"1rem 1.2rem", border:"1px solid rgba(255,255,255,0.15)" }}>
-            <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.88rem", color:"#fff", marginBottom:"0.7rem" }}>
+          <div style={{ background:"rgba(255,255,255,0.08)", borderRadius:"10px", padding:"0.75rem 1rem", border:"1px solid rgba(255,255,255,0.15)", flexShrink:0 }}>
+            <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.8rem", color:"#fff", marginBottom:"0.45rem" }}>
               Llena tus datos y te contactamos hoy
             </p>
             <form onSubmit={enviar} noValidate>
-              <div style={{ display:"flex", flexDirection:"column", gap:"0.45rem" }}>
+              <div style={{ display:"flex", flexDirection:"column", gap:"0.35rem" }}>
                 {[
                   { name:"nombre",   type:"text",  ph:"Nombre y apellido" },
                   { name:"email",    type:"email", ph:"Email" },
@@ -378,23 +372,23 @@ export default function IAPage() {
                     value={formData[f.name]}
                     onChange={e=>setFormData({...formData,[f.name]:e.target.value})}
                     required
-                    style={{ width:"100%", padding:"0.65rem 0.9rem", borderRadius:"6px",
+                    style={{ width:"100%", padding:"0.5rem 0.8rem", borderRadius:"6px",
                       border:"1.5px solid rgba(255,255,255,0.2)",
                       background:"rgba(255,255,255,0.12)", color:"#fff",
-                      fontFamily:"'Open Sans',sans-serif", fontSize:"0.85rem", outline:"none" }}
+                      fontFamily:"'Open Sans',sans-serif", fontSize:"0.82rem", outline:"none" }}
                   />
                 ))}
-                {status==="ok" && <div style={{ background:"#f0fdf4", border:"1px solid #86efac", borderRadius:"6px", padding:"0.6rem 0.85rem", color:"#166534", fontSize:"0.82rem", fontWeight:600 }}>✅ ¡Recibido! Te contactamos pronto.</div>}
-                {status==="err" && <div style={{ background:"#fef2f2", border:"1px solid #fca5a5", borderRadius:"6px", padding:"0.6rem 0.85rem", color:"#991b1b", fontSize:"0.82rem", fontWeight:600 }}>❌ Error. Intenta de nuevo.</div>}
+                {status==="ok" && <div style={{ background:"#f0fdf4", border:"1px solid #86efac", borderRadius:"6px", padding:"0.35rem 0.7rem", color:"#166534", fontSize:"0.75rem", fontWeight:600 }}>✅ ¡Recibido! Te contactamos pronto.</div>}
+                {status==="err" && <div style={{ background:"#fef2f2", border:"1px solid #fca5a5", borderRadius:"6px", padding:"0.35rem 0.7rem", color:"#991b1b", fontSize:"0.75rem", fontWeight:600 }}>❌ Error. Intenta de nuevo.</div>}
                 <button type="submit" disabled={loading}
-                  style={{ width:"100%", padding:"0.72rem", borderRadius:"6px",
+                  style={{ width:"100%", padding:"0.6rem", borderRadius:"6px", marginTop:"0.1rem",
                     background:"#f59700", color:"#fff", border:"none",
-                    fontFamily:"'Outfit',sans-serif", fontSize:"0.95rem", fontWeight:800,
+                    fontFamily:"'Outfit',sans-serif", fontSize:"0.85rem", fontWeight:800,
                     cursor:"pointer", textTransform:"uppercase", letterSpacing:"0.05em",
-                    boxShadow:"0 4px 16px rgba(245,151,0,0.4)" }}>
+                    boxShadow:"0 3px 12px rgba(245,151,0,0.4)" }}>
                   {loading?"Enviando…":"Solicitar información →"}
                 </button>
-                <p style={{ fontSize:"0.68rem", color:"rgba(255,255,255,0.4)", textAlign:"center" }}>
+                <p style={{ fontSize:"0.6rem", color:"rgba(255,255,255,0.35)", textAlign:"center" }}>
                   He leído y acepto el aviso de privacidad.
                 </p>
               </div>
