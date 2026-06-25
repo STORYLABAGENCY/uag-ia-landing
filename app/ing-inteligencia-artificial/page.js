@@ -914,27 +914,33 @@ export default function IAPage() {
           <button className="btn-orange" style={{ whiteSpace:"nowrap", padding:"0.55rem 1.5rem" }}>HABLA CON UN ASESOR</button>
         </a>
       </div>
-      {/* jQuery + Zoho cargados en orden con defer */}
-      <Script
-        src="https://code.jquery.com/jquery-3.7.1.min.js"
-        strategy="beforeInteractive"
-      />
+      {/* jQuery + Zoho en secuencia garantizada */}
       <Script
         id="zoho-forma"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            function loadZohoForm() {
-              if (document.getElementById('uagForma')) {
+            function loadZoho() {
+              if (typeof $ === 'undefined') {
+                var jq = document.createElement('script');
+                jq.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
+                jq.onload = function() {
+                  var s = document.createElement('script');
+                  s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26';
+                  document.body.appendChild(s);
+                };
+                document.head.appendChild(jq);
+              } else {
                 var s = document.createElement('script');
                 s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26';
-                s.async = false;
                 document.body.appendChild(s);
-              } else {
-                setTimeout(loadZohoForm, 300);
               }
             }
-            loadZohoForm();
+            if (document.readyState === 'complete') {
+              loadZoho();
+            } else {
+              window.addEventListener('load', loadZoho);
+            }
           `
         }}
       />
