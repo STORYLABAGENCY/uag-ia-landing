@@ -504,8 +504,9 @@ export default function IAPage() {
           {/* Header */}
           <div style={{ marginBottom:"2rem" }}>
             <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.14em", textTransform:"uppercase", marginBottom:"0.5rem" }}>ALIANZA INTERNACIONAL</p>
-            <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333" }}>
-              Lo que obtienes con <span style={{ color:"#7a2531" }}>Arizona State University</span>
+            <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", display:"flex", alignItems:"center", gap:"0.8rem", flexWrap:"wrap" }}>
+              Lo que obtienes con
+              <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png" alt="Arizona State University" style={{ height:"40px", objectFit:"contain" }} />
             </h2>
             <div style={{ width:"60px", height:"3px", background:"#f59700", marginTop:"0.6rem" }} />
           </div>
