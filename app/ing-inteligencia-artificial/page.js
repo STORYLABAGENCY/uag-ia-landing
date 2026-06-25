@@ -323,24 +323,24 @@ export default function IAPage() {
       </nav>
 
       {/* ── HERO — estilo UTEL colores UAG ── */}
-      <section style={{ marginTop:"70px", minHeight:"92vh", display:"grid", gridTemplateColumns:"1fr 1fr" }} className="hero-grid">
+      <section style={{ marginTop:"70px", minHeight:"auto", display:"grid", gridTemplateColumns:"1fr 1fr" }} className="hero-grid">
 
         {/* IZQUIERDA — imagen, oculta en móvil */}
-        <div className="hero-img-col" style={{ position:"relative", overflow:"hidden" }}>
+        <div className="hero-img-col" style={{ position:"relative", overflow:"hidden", maxHeight:"520px" }}>
           <img
             src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/Online-.png"
             alt="Estudiante UAG Online"
-            style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top", display:"block" }}
+            style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center 30%", display:"block" }}
           />
 
         </div>
 
         {/* DERECHA — fondo #7a2531, texto + formulario */}
-        <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", justifyContent:"center", padding:"3.5rem 3rem" }}>
+        <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", justifyContent:"center", padding:"2.5rem 3rem", maxHeight:"520px", overflowY:"auto" }}>
 
           {/* Logo UAG Online */}
           <div style={{ marginBottom:"1.5rem" }}>
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"100px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
+            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"160px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
           </div>
 
           {/* Headline */}
