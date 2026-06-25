@@ -276,6 +276,7 @@ export default function IAPage() {
         /* RESPONSIVE */
         @media(max-width:900px){
           .hero-grid { grid-template-columns:1fr !important; }
+          .hero-img-col { display:none !important; }
           .intro-benefit-grid { grid-template-columns:1fr !important; }
           .social-proof-grid { grid-template-columns:1fr !important; }
           .hero-man-img { height:75% !important; opacity:0.35 !important; right:0 !important; }
@@ -318,101 +319,83 @@ export default function IAPage() {
         </a>
       </nav>
 
-      {/* ── HERO / BANNER ── */}
-      <section style={{ marginTop:"70px", background:"#7a2531", padding:"0" }}>
-        <div className="hero-grid" style={{ display:"grid", gridTemplateColumns:"1fr 400px", minHeight:"380px" }}>
-          {/* Izq — Background imagen + MAN.png + texto encima */}
-          <div style={{ position:"relative", overflow:"hidden", minHeight:"420px", display:"flex", flexDirection:"column", justifyContent:"flex-end" }}>
-            {/* Imagen de fondo del banner */}
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/BACK%20BANNERS.png"
-              alt="" style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center" }} />
-            {/* Overlay oscuro para legibilidad */}
-            <div style={{ position:"absolute", inset:0, background:"linear-gradient(135deg,rgba(90,10,20,0.82) 0%,rgba(122,37,49,0.65) 60%,rgba(0,0,0,0.3) 100%)" }} />
-            {/* Imagen del estudiante — lado derecho */}
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/MAN.png"
-              alt="Estudiante UAG" className="hero-man-img"
-              style={{ position:"absolute", bottom:0, right:"2%", height:"105%", objectFit:"contain", objectPosition:"bottom", zIndex:1, pointerEvents:"none" }} />
-            {/* Contenido de texto v2 — headline de beneficio */}
-            <div style={{ position:"relative", zIndex:2, padding:"3rem 3rem 3rem" }}>
-              <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.8rem", fontWeight:700, color:"#f59700", letterSpacing:"0.12em", textTransform:"uppercase", marginBottom:"1rem" }}>
-                LIC. EN · UAG ONLINE
-              </p>
-              <h1 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.8rem,4vw,3.2rem)", fontWeight:900, color:"#fff", lineHeight:1.08, letterSpacing:"-0.02em", marginBottom:"1rem" }}>
-                Domina el futuro tecnológico<br/>
-                con la Ingeniería en<br/>
-                <span style={{ color:"#f59700" }}>Inteligencia Artificial</span><br/>
-                Online de la UAG
-              </h1>
-              <p style={{ fontSize:"0.95rem", color:"rgba(255,255,255,0.82)", lineHeight:1.7, maxWidth:"480px", marginBottom:"2rem" }}>
-                Diseña sistemas inteligentes, lidera proyectos de IA y posiciona tu carrera en la industria tecnológica global — sin dejar de trabajar.
-              </p>
-              {/* CTA inmediato arriba del fold — MEJORA 2 */}
-              <div style={{ display:"flex", gap:"0.8rem", flexWrap:"wrap", marginBottom:"1.5rem" }}>
-                <a href="#formulario">
-                  <button style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:800,
-                    background:"#f59700", color:"#fff", border:"none",
-                    padding:"0.85rem 2rem", borderRadius:"6px", cursor:"pointer",
-                    boxShadow:"0 4px 20px rgba(245,151,0,0.45)",
-                    transition:"background 0.2s, transform 0.15s",
-                    textTransform:"uppercase", letterSpacing:"0.04em" }}
-                    onMouseEnter={e=>{ e.currentTarget.style.background="#e08800"; e.currentTarget.style.transform="translateY(-2px)"; }}
-                    onMouseLeave={e=>{ e.currentTarget.style.background="#f59700"; e.currentTarget.style.transform="none"; }}>
-                    Inicia tu proceso hoy →
-                  </button>
-                </a>
-                <a href="#formulario">
-                  <button style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.88rem", fontWeight:700,
-                    background:"transparent", color:"#fff", border:"2px solid rgba(255,255,255,0.5)",
-                    padding:"0.85rem 1.5rem", borderRadius:"6px", cursor:"pointer",
-                    transition:"border-color 0.2s" }}
-                    onMouseEnter={e=>e.currentTarget.style.borderColor="#fff"}
-                    onMouseLeave={e=>e.currentTarget.style.borderColor="rgba(255,255,255,0.5)"}>
-                    Investiga becas disponibles
-                  </button>
-                </a>
-              </div>
-              {/* Trust pills */}
-              <div style={{ display:"flex", gap:"0.5rem", flexWrap:"wrap" }}>
-                {["✓ Inicio sep 2026","✓ Beca + Bono","✓ 100% Online","✓ Título SEP"].map((t,i)=>(
-                  <span key={i} style={{ fontSize:"0.75rem", fontWeight:600, color:"rgba(255,255,255,0.75)", background:"rgba(255,255,255,0.08)", borderRadius:"100px", padding:"0.25rem 0.7rem", border:"1px solid rgba(255,255,255,0.15)" }}>{t}</span>
-                ))}
-              </div>
-            </div>
+      {/* ── HERO — estilo UTEL colores UAG ── */}
+      <section style={{ marginTop:"70px", minHeight:"92vh", display:"grid", gridTemplateColumns:"1fr 1fr" }} className="hero-grid">
+
+        {/* IZQUIERDA — imagen, oculta en móvil */}
+        <div className="hero-img-col" style={{ position:"relative", overflow:"hidden" }}>
+          <img
+            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/Online-.png"
+            alt="Estudiante UAG Online"
+            style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top", display:"block" }}
+          />
+          {/* Líneas decorativas */}
+          <div style={{ position:"absolute", inset:0, pointerEvents:"none" }}>
+            {[20,35,50,65,80].map((left,i)=>(
+              <div key={i} style={{ position:"absolute", top:0, bottom:0, left:`${left}%`, width:"1px", background:"rgba(245,151,0,0.2)" }} />
+            ))}
+          </div>
+        </div>
+
+        {/* DERECHA — fondo #7a2531, texto + formulario */}
+        <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", justifyContent:"center", padding:"3.5rem 3rem" }}>
+
+          {/* Badge ASU */}
+          <div style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", background:"rgba(245,151,0,0.15)", border:"1px solid rgba(245,151,0,0.4)", borderRadius:"100px", padding:"0.35rem 1rem", marginBottom:"1.5rem", width:"fit-content" }}>
+            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png" alt="ASU" style={{ height:"20px", objectFit:"contain", filter:"brightness(0) invert(1)" }} />
+            <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.78rem", fontWeight:700, color:"#f59700" }}>Alianza con Arizona State University</span>
           </div>
 
-          {/* Der — Formulario */}
-          <div id="formulario" style={{ background:"#fff", padding:"2.5rem 2rem", display:"flex", flexDirection:"column", justifyContent:"center" }}>
-            <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.25rem", fontWeight:800, color:"#333", marginBottom:"0.3rem" }}>
-              Solicita información
-            </h2>
-            <p style={{ fontSize:"0.82rem", color:"#888", marginBottom:"1.4rem" }}>
-              Sin costo · Te contactamos en menos de 24 hrs
+          {/* Headline */}
+          <h1 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.6rem,3vw,2.6rem)", fontWeight:900, color:"#fff", lineHeight:1.1, letterSpacing:"-0.02em", marginBottom:"1rem" }}>
+            Domina el futuro tecnológico con la Ingeniería en{" "}
+            <span style={{ color:"#f59700" }}>Inteligencia Artificial</span>{" "}
+            Online de la UAG
+          </h1>
+          <p style={{ fontSize:"0.9rem", color:"rgba(255,255,255,0.78)", lineHeight:1.7, marginBottom:"1.8rem" }}>
+            Diseña sistemas inteligentes, lidera proyectos de IA y posiciona tu carrera en la industria tecnológica global — sin dejar de trabajar.
+          </p>
+
+          {/* Formulario */}
+          <div style={{ background:"rgba(255,255,255,0.08)", borderRadius:"12px", padding:"1.5rem", border:"1px solid rgba(255,255,255,0.15)" }}>
+            <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.95rem", color:"#fff", marginBottom:"1rem" }}>
+              Llena tus datos y te contactamos hoy
             </p>
             <form onSubmit={enviar} noValidate>
-              <div style={{ display:"flex", flexDirection:"column", gap:"0.75rem" }}>
+              <div style={{ display:"flex", flexDirection:"column", gap:"0.6rem" }}>
                 {[
-                  { label:"Nombre completo *",  name:"nombre",   type:"text",  ph:"Tu nombre" },
-                  { label:"Correo electrónico *", name:"email",  type:"email", ph:"correo@ejemplo.com" },
-                  { label:"Teléfono *",           name:"telefono",type:"tel",  ph:"+52 33 …" },
+                  { name:"nombre",   type:"text",  ph:"Nombre y apellido" },
+                  { name:"email",    type:"email", ph:"Email" },
+                  { name:"telefono", type:"tel",   ph:"Móvil (10 dígitos)" },
                 ].map(f=>(
-                  <div key={f.name}>
-                    <label style={{ fontSize:"0.75rem", fontWeight:600, color:"#555", display:"block", marginBottom:"0.25rem" }}>{f.label}</label>
-                    <input className="form-field" type={f.type} placeholder={f.ph}
-                      value={formData[f.name]} onChange={e=>setFormData({...formData,[f.name]:e.target.value})} required />
-                  </div>
+                  <input key={f.name} type={f.type} placeholder={f.ph}
+                    value={formData[f.name]}
+                    onChange={e=>setFormData({...formData,[f.name]:e.target.value})}
+                    required
+                    style={{ width:"100%", padding:"0.85rem 1rem", borderRadius:"6px",
+                      border:"1.5px solid rgba(255,255,255,0.2)",
+                      background:"rgba(255,255,255,0.12)", color:"#fff",
+                      fontFamily:"'Open Sans',sans-serif", fontSize:"0.88rem", outline:"none" }}
+                  />
                 ))}
-                {status==="ok" && <div style={{ background:"#f0fdf4", border:"1px solid #86efac", borderRadius:"4px", padding:"0.6rem 0.85rem", color:"#166534", fontSize:"0.82rem", fontWeight:600 }}>✅ ¡Recibido! Te contactamos pronto.</div>}
-                {status==="err" && <div style={{ background:"#fef2f2", border:"1px solid #fca5a5", borderRadius:"4px", padding:"0.6rem 0.85rem", color:"#991b1b", fontSize:"0.82rem", fontWeight:600 }}>❌ Error. Intenta de nuevo.</div>}
-                <button type="submit" className="btn-orange" disabled={loading} style={{ width:"100%", padding:"0.85rem", fontSize:"0.92rem" }}>
-                  {loading?"Enviando…":"INSCRÍBETE YA"}
+                {status==="ok" && <div style={{ background:"#f0fdf4", border:"1px solid #86efac", borderRadius:"6px", padding:"0.6rem 0.85rem", color:"#166534", fontSize:"0.82rem", fontWeight:600 }}>✅ ¡Recibido! Te contactamos pronto.</div>}
+                {status==="err" && <div style={{ background:"#fef2f2", border:"1px solid #fca5a5", borderRadius:"6px", padding:"0.6rem 0.85rem", color:"#991b1b", fontSize:"0.82rem", fontWeight:600 }}>❌ Error. Intenta de nuevo.</div>}
+                <button type="submit" disabled={loading}
+                  style={{ width:"100%", padding:"0.9rem", borderRadius:"6px",
+                    background:"#f59700", color:"#fff", border:"none",
+                    fontFamily:"'Outfit',sans-serif", fontSize:"0.95rem", fontWeight:800,
+                    cursor:"pointer", textTransform:"uppercase", letterSpacing:"0.05em",
+                    boxShadow:"0 4px 16px rgba(245,151,0,0.4)" }}>
+                  {loading?"Enviando…":"Solicitar información →"}
                 </button>
-                <p style={{ fontSize:"0.68rem", color:"#bbb", textAlign:"center" }}>Al enviar aceptas nuestra política de privacidad.</p>
+                <p style={{ fontSize:"0.68rem", color:"rgba(255,255,255,0.4)", textAlign:"center" }}>
+                  He leído y acepto el aviso de privacidad.
+                </p>
               </div>
             </form>
           </div>
         </div>
       </section>
-
       {/* ── INTRO v2 — beneficios claros ── */}
       <section style={{ padding:"4rem 2rem", background:"#fff", maxWidth:"1100px", margin:"0 auto" }}>
 
