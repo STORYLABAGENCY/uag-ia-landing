@@ -329,21 +329,15 @@ export default function IAPage() {
             alt="Estudiante UAG Online"
             style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top", display:"block" }}
           />
-          {/* Líneas decorativas */}
-          <div style={{ position:"absolute", inset:0, pointerEvents:"none" }}>
-            {[20,35,50,65,80].map((left,i)=>(
-              <div key={i} style={{ position:"absolute", top:0, bottom:0, left:`${left}%`, width:"1px", background:"rgba(245,151,0,0.2)" }} />
-            ))}
-          </div>
+
         </div>
 
         {/* DERECHA — fondo #7a2531, texto + formulario */}
         <div id="formulario" style={{ background:"#7a2531", display:"flex", flexDirection:"column", justifyContent:"center", padding:"3.5rem 3rem" }}>
 
-          {/* Badge ASU */}
-          <div style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", background:"rgba(245,151,0,0.15)", border:"1px solid rgba(245,151,0,0.4)", borderRadius:"100px", padding:"0.35rem 1rem", marginBottom:"1.5rem", width:"fit-content" }}>
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png" alt="ASU" style={{ height:"20px", objectFit:"contain", filter:"brightness(0) invert(1)" }} />
-            <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.78rem", fontWeight:700, color:"#f59700" }}>Alianza con Arizona State University</span>
+          {/* Logo UAG Online */}
+          <div style={{ marginBottom:"1.5rem" }}>
+            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"64px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
           </div>
 
           {/* Headline */}
@@ -408,16 +402,12 @@ export default function IAPage() {
             <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1rem" }}>
               Aquí no solo estudias Inteligencia Artificial — te preparas para liderar la transformación digital del mundo. Con el respaldo de la UAG y Arizona State University, dominarás las herramientas exactas que Intel, IBM y las empresas líderes demandan hoy.
             </p>
-            <a href="#formulario">
-              <button className="btn-orange" style={{ marginTop:"0.5rem" }}>Solicita información gratis →</button>
-            </a>
           </div>
           {/* Métricas de social proof — MEJORA 5 */}
-          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"1rem" }}>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"1rem" }}>
             {[
               { num:"9/10", label:"egresados consigue empleo en menos de 1 año", color:"#7a2531" },
               { num:"90%", label:"de estudiantes obtiene beca o apoyo financiero", color:"#f59700" },
-              { num:"#1", label:"Universidad en innovación según alianza con ASU", color:"#7a2531" },
               { num:"100%", label:"online — sin horarios rígidos ni clases obligatorias", color:"#f59700" },
             ].map((m,i)=>(
               <div key={i} style={{ padding:"1.2rem", background:"#f9f9f9", borderRadius:"10px", border:`2px solid ${m.color}22` }}>
@@ -771,24 +761,6 @@ export default function IAPage() {
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"0.3rem" }}>Plan de estudios</h2>
           <p style={{ fontSize:"0.84rem", color:"#888", marginBottom:"0.5rem" }}>Programa Cuatrimestral · 12 Cuatrimestres · 4 años</p>
           <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"1.5rem" }} />
-
-          {/* Áreas temáticas */}
-          <div style={{ display:"flex", gap:"0.5rem", flexWrap:"wrap", marginBottom:"2rem" }}>
-            {[
-              { label:"Fundamentos", rango:"C1–C3", color:"#f59700" },
-              { label:"Programación & Matemáticas", rango:"C4–C6", color:"#7a2531" },
-              { label:"IA & Machine Learning", rango:"C7–C9", color:"#f59700" },
-              { label:"IA Avanzada & Especialización", rango:"C10–C12", color:"#7a2531" },
-            ].map((a,i)=>(
-              <div key={i} style={{ padding:"0.5rem 1rem", borderRadius:"100px",
-                background:`${a.color}12`, border:`1.5px solid ${a.color}40`,
-                display:"flex", alignItems:"center", gap:"0.5rem" }}>
-                <span style={{ width:"8px", height:"8px", borderRadius:"50%", background:a.color, flexShrink:0 }} />
-                <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.78rem", fontWeight:700, color:a.color }}>{a.label}</span>
-                <span style={{ fontSize:"0.72rem", color:"#888" }}>{a.rango}</span>
-              </div>
-            ))}
-          </div>
 
           {/* ── DESKTOP: grid de tarjetas ── */}
           <div className="plan-cards-grid" style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:"1rem" }}>
