@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Script from "next/script";
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
@@ -126,14 +127,7 @@ export default function IAPage() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
-  // Cargar script de Zoho
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => { document.body.removeChild(script); };
-  }, []);
+  // Cargar script de Zoho — via componente Script de Next.js
 
   useEffect(() => {
     if (!admRef.current) return;
@@ -920,6 +914,11 @@ export default function IAPage() {
           <button className="btn-orange" style={{ whiteSpace:"nowrap", padding:"0.55rem 1.5rem" }}>HABLA CON UN ASESOR</button>
         </a>
       </div>
+      {/* Script Zoho */}
+      <Script
+        src="https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26"
+        strategy="afterInteractive"
+      />
     </>
   );
 }
