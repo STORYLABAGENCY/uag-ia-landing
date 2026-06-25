@@ -914,6 +914,11 @@ export default function IAPage() {
           <button className="btn-orange" style={{ whiteSpace:"nowrap", padding:"0.55rem 1.5rem" }}>HABLA CON UN ASESOR</button>
         </a>
       </div>
+      {/* jQuery requerido por Zoho */}
+      <Script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        strategy="beforeInteractive"
+      />
       {/* Script Zoho */}
       <Script
         src="https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26"
