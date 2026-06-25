@@ -933,6 +933,18 @@ export default function IAPage() {
           <button className="btn-orange" style={{ whiteSpace:"nowrap", padding:"0.55rem 1.5rem" }}>HABLA CON UN ASESOR</button>
         </a>
       </div>
+      {/* Modal video alianza ASU */}
+      {videoOpen && (
+        <div onClick={()=>setVideoOpen(false)} style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.85)", zIndex:1000, display:"flex", alignItems:"center", justifyContent:"center", padding:"1.5rem" }}>
+          <div onClick={e=>e.stopPropagation()} style={{ position:"relative", width:"100%", maxWidth:"860px", background:"#000", borderRadius:"12px", overflow:"hidden", boxShadow:"0 24px 80px rgba(0,0,0,0.5)" }}>
+            <button onClick={()=>setVideoOpen(false)} style={{ position:"absolute", top:"0.8rem", right:"0.8rem", zIndex:10, background:"rgba(0,0,0,0.6)", border:"none", borderRadius:"50%", width:"36px", height:"36px", color:"#fff", fontSize:"1.1rem", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center" }}>✕</button>
+            <div style={{ position:"relative", paddingBottom:"56.25%", height:0 }}>
+              <iframe src="https://www.youtube.com/embed/LBQTOLmMmrM?autoplay=1" title="Alianza UAG — Arizona State University" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position:"absolute", top:0, left:0, width:"100%", height:"100%", border:"none" }} />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* jQuery + Zoho en secuencia garantizada */}
       <Script
         id="zoho-forma"
