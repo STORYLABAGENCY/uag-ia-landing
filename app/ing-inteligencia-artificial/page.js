@@ -312,8 +312,11 @@ export default function IAPage() {
 
       {/* ── NAV ── */}
       <nav className={`nav-ia ${scrollY>50?"scrolled":""}`}>
-        <div></div>
-        <img src={LOGO_URL} alt="UAG Online" style={{ height:"52px" }} />
+        <img
+          src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/Logo%20UAG-01.png"
+          alt="UAG Online"
+          style={{ height:"58px", objectFit:"contain", objectPosition:"left" }}
+        />
         <a href="#formulario">
           <button className="btn-orange">Habla con un asesor</button>
         </a>
@@ -337,7 +340,7 @@ export default function IAPage() {
 
           {/* Logo UAG Online */}
           <div style={{ marginBottom:"1.5rem" }}>
-            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"64px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
+            <img src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/LOGO%20UAG%20ONLINE.png" alt="UAG Online" style={{ height:"100px", objectFit:"contain", objectPosition:"left", filter:"brightness(0) invert(1)" }} />
           </div>
 
           {/* Headline */}
