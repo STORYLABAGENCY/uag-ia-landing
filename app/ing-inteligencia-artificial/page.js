@@ -497,6 +497,44 @@ export default function IAPage() {
         </div>
       </section>
 
+      {/* ── MAESTRÍA ACELERADA ── */}
+      <section style={{ padding:"4rem 2rem", background:"#fff", borderTop:"3px solid #f59700" }}>
+        <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
+          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3rem", alignItems:"center" }} className="asu-chat-grid">
+            <div>
+              <div style={{ display:"flex", alignItems:"center", gap:"1rem", marginBottom:"1rem", flexWrap:"wrap" }}>
+                <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333" }}>
+                  Maestría acelerada con
+                </h2>
+                <img
+                  src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/asu.png"
+                  alt="ASU"
+                  style={{ height:"44px", objectFit:"contain" }}
+                />
+              </div>
+              <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"1.5rem" }} />
+              <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1.2rem" }}>
+                Tienes la oportunidad de acelerar tus estudios de maestría durante tu licenciatura, a través de revalidación de 2 materias con <strong>Thunderbird School of Global Management</strong>.
+              </p>
+              <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8 }}>
+                Educación universitaria de calidad sin fronteras. Plataforma digital, docentes expertos y titulación oficial UAG para impulsar tu carrera desde donde estés.
+              </p>
+            </div>
+            {/* Card destacada */}
+            <div style={{ background:"#7a2531", borderRadius:"16px", padding:"2.5rem", color:"#fff" }}>
+              <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.78rem", fontWeight:700, color:"#f59700", letterSpacing:"0.12em", textTransform:"uppercase", marginBottom:"1rem" }}>BENEFICIO EXCLUSIVO</p>
+              <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"2.5rem", fontWeight:900, lineHeight:1, color:"#fff", marginBottom:"0.4rem" }}>2</p>
+              <p style={{ fontSize:"0.95rem", color:"rgba(255,255,255,0.85)", marginBottom:"1.5rem", lineHeight:1.5 }}>materias revalidables para tu maestría desde la licenciatura</p>
+              <div style={{ borderTop:"1px solid rgba(255,255,255,0.15)", paddingTop:"1.2rem" }}>
+                <p style={{ fontSize:"0.84rem", color:"rgba(255,255,255,0.7)", lineHeight:1.6 }}>
+                  A través de <strong style={{ color:"#f59700" }}>Thunderbird School of Global Management</strong>, una de las escuelas de negocios más reconocidas del mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── INGLÉS + MAYA ── */}
       <section style={{ padding:"4rem 2rem", background:"#f9f9f9", borderTop:"3px solid #f59700" }}>
         <div style={{ maxWidth:"1100px", margin:"0 auto" }}>
@@ -615,9 +653,6 @@ export default function IAPage() {
                   </div>
                 ))}
               </div>
-              <a href="#formulario">
-                <button className="btn-orange">Investiga tu beca disponible →</button>
-              </a>
             </div>
             {/* Testimonial mockup */}
             <div style={{ background:"#f9f9f9", borderRadius:"16px", padding:"2rem", border:"1px solid #eee", position:"relative" }}>
