@@ -11,13 +11,10 @@ const supabase = createClient(
 const LOGO_URL = "https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/online%20logo%201%20(1).png";
 
 const RAZONES = [
-  { num:"01", titulo:"Doble Respaldo Global", desc:"Gradúate con contenidos codiseñados por la universidad #1 en innovación de EE.UU. (ASU), asegurando un perfil internacional atractivo para empresas globales. Mismo título, doble valor." },
-  { num:"02", titulo:"Inserción Laboral Inmediata", desc:"Domina de forma práctica las herramientas exactas que Intel, IBM y las empresas líderes demandan hoy — Python, Machine Learning, Deep Learning — ahorrando años de teoría obsoleta." },
-  { num:"03", titulo:"Estudia sin sacrificar tu trabajo ni tu vida", desc:"Dos rutas de aprendizaje flexibles: termina en 3 o 4 años según tu disponibilidad. Con Coach Académico personal que te acompaña en cada paso, sin que te pierdas." },
-  { num:"04", titulo:"Perfil ejecutivo desde el primer cuatrimestre", desc:"No solo programas — desarrollas visión estratégica. Materias de innovación, emprendimiento y liderazgo tecnológico que te posicionan como líder, no solo como técnico." },
-  { num:"05", titulo:"9 de cada 10 egresados ya trabaja en IA", desc:"Tu título UAG tiene reconocimiento nacional e internacional. Con nuestra red de +200 convenios empresariales, la inserción laboral no es una promesa — es un resultado comprobado." },
-  { num:"06", titulo:"Certificación internacional sin costo extra", desc:"Al cursar Gestión de la Innovación Sostenible, recibes una certificación gratuita de ASU avalada internacionalmente. Un diferenciador real en tu CV desde el primer año." },
-  { num:"07", titulo:"Domina las herramientas que el mercado exige hoy", desc:"Machine Learning, IA Generativa, Visión Artificial, NLP, Cloud Computing — el plan de estudios está diseñado con los requerimientos exactos de la industria tecnológica global." },
+  { num:"01", titulo:"Ingeniería en IA desde el primer cuatrimestre", desc:"Aprende a diseñar sistemas inteligentes desde el inicio de tu carrera con Machine Learning, Ciencia de Datos e IA Generativa, no como una especialidad al final del programa." },
+  { num:"02", titulo:"Especialízate en las áreas con mayor demanda", desc:"Desarrolla competencias en Ciencia de Datos, Procesamiento de Lenguaje Natural (NLP) y Visión Artificial, tres áreas clave para la innovación tecnológica y la transformación digital." },
+  { num:"03", titulo:"Formación internacional con Arizona State University", desc:"Fortalece tu perfil con contenidos internacionales, certificación de inglés con ASU y la posibilidad de continuar una maestría acelerada con una universidad reconocida mundialmente." },
+  { num:"04", titulo:"Flexibilidad con acompañamiento real", desc:"Estudia 100% online con clases en vivo y grabadas, organiza tu tiempo y avanza con el acompañamiento de un Coach Académico. Además, tendrás acceso a Canvas, Microsoft 365 y LINC para aprender, colaborar y recibir asesorías personalizadas desde cualquier lugar y a tu propio ritmo." },
 ];
 
 const ICON_IA = () => (
