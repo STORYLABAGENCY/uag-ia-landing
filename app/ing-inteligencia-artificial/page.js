@@ -366,7 +366,7 @@ export default function IAPage() {
               Dirige el futuro de la tecnología.
             </p>
             <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1rem" }}>
-              Aquí no solo estudias Inteligencia Artificial — te preparas para liderar la transformación digital del mundo. Con el respaldo de la UAG y Arizona State University, dominarás las herramientas exactas que Intel, IBM y las empresas líderes demandan hoy.
+              Aquí no solo estudias Inteligencia Artificial — te preparas para liderar la transformación digital del mundo. Con el respaldo de la UAG y Arizona State University, dominarás las herramientas exactas que las empresas líderes del sector tecnológico demandan hoy.
             </p>
           </div>
           {/* Métricas de social proof — MEJORA 5 */}
