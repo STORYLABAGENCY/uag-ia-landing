@@ -624,13 +624,13 @@ export default function IAPage() {
             <div>
               <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.14em", textTransform:"uppercase", marginBottom:"0.5rem" }}>BECAS Y FINANCIAMIENTO</p>
               <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"1rem", lineHeight:1.2 }}>
-                Estudiar en la UAG es más accesible de lo que crees
+                Invierte en tu futuro con el respaldo de la UAG
               </h2>
               <p style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.75, marginBottom:"1.5rem" }}>
-                El <strong>90% de nuestros estudiantes online</strong> recibe algún tipo de beca o apoyo financiero. No dejes que el costo sea el obstáculo — habla con un asesor y descubre las opciones disponibles para tu perfil.
+                Conoce las opciones de apoyo que la UAG tiene para ti. Al inscribirte en el momento indicado, podrás acceder a <strong>beca + bono</strong>, además de contar con alternativas de financiamiento a través de <strong>LAUDEX</strong>, para que nada detenga tu desarrollo profesional.
               </p>
               <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem", marginBottom:"1.5rem" }}>
-                {["Beca por desempeño académico","Bono de inscripción para nuevo ingreso","Opciones de pago flexibles sin intereses","Programa de referidos con descuento adicional"].map((t,i)=>(
+                {["Inscríbete a tiempo y obtén beca + bono disponibles para nuevo ingreso","Opciones de financiamiento educativo con LAUDEX","Asesoría personalizada para encontrar la alternativa que mejor se adapte a tu perfil"].map((t,i)=>(
                   <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.7rem" }}>
                     <span style={{ color:"#f59700", fontWeight:700, fontSize:"1rem", flexShrink:0 }}>✓</span>
                     <span style={{ fontSize:"0.88rem", color:"#555" }}>{t}</span>
