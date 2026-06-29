@@ -346,7 +346,7 @@ export default function IAPage() {
             Online de la UAG
           </h1>
 
-          <p style={{ fontSize:"0.88rem", color:"rgba(255,255,255,0.78)", lineHeight:1.6, marginBottom:"1.4rem" }}>
+          <p style={{ fontSize:"0.93rem", color:"rgba(255,255,255,0.78)", lineHeight:1.6, marginBottom:"1.4rem" }}>
             Diseña sistemas inteligentes, lidera proyectos de IA y posiciona tu carrera en la industria tecnológica global — sin dejar de trabajar.
           </p>
 
@@ -385,12 +385,12 @@ export default function IAPage() {
         </div>
 
         <div style={{ paddingTop:"2.5rem", borderTop:"2px solid #f59700" }}>
-          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#f59700", marginBottom:"0.3rem" }}>Crea, Innova y Lidera</p>
+          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.05rem", fontWeight:700, color:"#f59700", marginBottom:"0.3rem" }}>Crea, Innova y Lidera</p>
           <h2 style={{ fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"2rem", lineHeight:1.3 }}>
             Forma parte de la generación que transforma la tecnología en oportunidades reales para la sociedad.
           </h2>
 
-          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#555", fontStyle:"italic", marginBottom:"1.5rem" }}>
+          <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.05rem", fontWeight:700, color:"#555", fontStyle:"italic", marginBottom:"1.5rem" }}>
             ¿Por qué estudiar Ingeniería en Inteligencia Artificial Online en la UAG?
           </p>
 
@@ -399,7 +399,7 @@ export default function IAPage() {
               <div key={i} className="razon-row">
                 <span className="razon-num">{r.num}</span>
                 <div>
-                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.95rem", color:"#333", marginBottom:"0.3rem" }}>
+                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"1.05rem", color:"#333", marginBottom:"0.3rem" }}>
                     {r.titulo}
                   </p>
                   <p style={{ fontSize:"0.87rem", color:"#666", lineHeight:1.7 }}>{r.desc}</p>
@@ -426,8 +426,8 @@ export default function IAPage() {
             {HABILIDADES.map((h,i)=>(
               <div key={i} style={{ textAlign:"center", padding:"0 0.5rem" }}>
                 <div style={{ display:"flex", justifyContent:"center", marginBottom:"1.5rem" }}>{h.icon}</div>
-                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.95rem", fontWeight:700, color:"#333", marginBottom:"0.5rem", lineHeight:1.3 }}>{h.titulo}</h3>
-                <p style={{ fontSize:"0.83rem", color:"#666", lineHeight:1.6 }}>{h.desc}</p>
+                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.05rem", fontWeight:700, color:"#333", marginBottom:"0.5rem", lineHeight:1.3 }}>{h.titulo}</h3>
+                <p style={{ fontSize:"0.88rem", color:"#666", lineHeight:1.6 }}>{h.desc}</p>
               </div>
             ))}
           </div>
@@ -439,13 +439,13 @@ export default function IAPage() {
         <div style={{ maxWidth:"1100px", margin:"0 auto", textAlign:"center" }}>
           <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.8rem", fontWeight:700, color:"#f59700", letterSpacing:"0.14em", textTransform:"uppercase", marginBottom:"0.4rem" }}>MODALIDAD ONLINE</p>
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.4rem", fontWeight:700, color:"#fff", marginBottom:"0.3rem" }}>Programa Cuatrimestral | 12 Cuatrimestres</h2>
-          <p style={{ fontSize:"0.88rem", color:"rgba(255,255,255,0.65)", marginBottom:"3rem" }}>Estudia a tu ritmo, sin horarios fijos, con acompañamiento personalizado.</p>
+          <p style={{ fontSize:"0.93rem", color:"rgba(255,255,255,0.65)", marginBottom:"3rem" }}>Estudia a tu ritmo, sin horarios fijos, con acompañamiento personalizado.</p>
           <div className="modal-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"2.5rem" }}>
             {MODALIDAD.map((m,i)=>(
               <div key={i} style={{ textAlign:"center" }}>
                 <div style={{ display:"flex", justifyContent:"center", marginBottom:"1.2rem" }}>{m.svg}</div>
-                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1rem", fontWeight:700, color:"#fff", marginBottom:"0.6rem" }}>{m.titulo}</h3>
-                <p style={{ fontSize:"0.84rem", color:"rgba(255,255,255,0.7)", lineHeight:1.7 }}>{m.desc}</p>
+                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.05rem", fontWeight:700, color:"#fff", marginBottom:"0.6rem" }}>{m.titulo}</h3>
+                <p style={{ fontSize:"0.89rem", color:"rgba(255,255,255,0.7)", lineHeight:1.7 }}>{m.desc}</p>
               </div>
             ))}
           </div>
@@ -463,7 +463,7 @@ export default function IAPage() {
                 onMouseEnter={e=>{ e.currentTarget.style.borderColor="#f59700"; e.currentTarget.style.transform="translateY(-2px)"; }}
                 onMouseLeave={e=>{ e.currentTarget.style.borderColor="#eee"; e.currentTarget.style.transform="none"; }}>
                 <span style={{ width:"8px", height:"8px", borderRadius:"50%", background:i%2===0?"#7a2531":"#f59700", flexShrink:0 }} />
-                <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.86rem", fontWeight:600, color:"#333" }}>{c}</span>
+                <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.91rem", fontWeight:600, color:"#333" }}>{c}</span>
               </div>
             ))}
           </div>
@@ -488,7 +488,7 @@ export default function IAPage() {
                 onMouseEnter={e=>e.currentTarget.style.borderColor="#f59700"}
                 onMouseLeave={e=>e.currentTarget.style.borderColor="#eee"}>
                 <span style={{ flexShrink:0 }}>{d.svg}</span>
-                <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.88rem", fontWeight:600, color:"#333", lineHeight:1.4 }}>{d.t}</p>
+                <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.93rem", fontWeight:600, color:"#333", lineHeight:1.4 }}>{d.t}</p>
               </div>
             ))}
           </div>
@@ -528,9 +528,9 @@ export default function IAPage() {
                       <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.8rem" }}>BENEFICIO EXCLUSIVO</p>
                       <div style={{ display:"flex", alignItems:"center", gap:"1rem", marginBottom:"0.8rem" }}>
                         <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"3rem", fontWeight:900, color:"#7a2531", lineHeight:1 }}>2</span>
-                        <span style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.4 }}>materias revalidables para tu maestría desde la licenciatura</span>
+                        <span style={{ fontSize:"1.05rem", color:"#555", lineHeight:1.4 }}>materias revalidables para tu maestría desde la licenciatura</span>
                       </div>
-                      <p style={{ fontSize:"0.82rem", color:"#888", lineHeight:1.6, borderTop:"1px solid #eee", paddingTop:"0.8rem" }}>
+                      <p style={{ fontSize:"0.87rem", color:"#888", lineHeight:1.6, borderTop:"1px solid #eee", paddingTop:"0.8rem" }}>
                         A través de <strong style={{ color:"#7a2531" }}>Thunderbird School of Global Management</strong>, una de las escuelas de negocios más reconocidas del mundo.
                       </p>
                     </div>
@@ -542,14 +542,14 @@ export default function IAPage() {
                 contenido: (
                   <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"3rem", alignItems:"center" }} className="asu-chat-grid">
                     <div>
-                      <p style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
+                      <p style={{ fontSize:"1.05rem", color:"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
                         Tu programa incluye 14 niveles de inglés con certificación de Arizona State University, sin costo adicional. <strong>Maya</strong> es la inteligencia artificial que guía tu práctica y conversación disponible las 24 horas.
                       </p>
                       <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem" }}>
                         {["14 niveles de inglés certificados por ASU","Inteligencia Artificial MAYA disponible 24/7","Certificación internacional sin costo adicional","Práctica de conversación guiada por IA"].map((t,i)=>(
                           <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.7rem" }}>
-                            <span style={{ color:"#f59700", fontWeight:700, fontSize:"1rem" }}>✓</span>
-                            <span style={{ fontSize:"0.88rem", color:"#555" }}>{t}</span>
+                            <span style={{ color:"#f59700", fontWeight:700, fontSize:"1.05rem" }}>✓</span>
+                            <span style={{ fontSize:"0.93rem", color:"#555" }}>{t}</span>
                           </div>
                         ))}
                       </div>
@@ -558,7 +558,7 @@ export default function IAPage() {
                       <div style={{ display:"flex", alignItems:"center", gap:"0.8rem", marginBottom:"1.2rem", paddingBottom:"1rem", borderBottom:"1px solid #f0f0f0" }}>
                         <div style={{ width:"40px", height:"40px", borderRadius:"8px", background:"#7a2531", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"1.2rem", flexShrink:0 }}>🤖</div>
                         <div>
-                          <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.9rem", color:"#333" }}>Maya IA</p>
+                          <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"1.05rem", color:"#333" }}>Maya IA</p>
                           <p style={{ fontSize:"0.72rem", color:"#888" }}>Asistente de inglés UAG · ASU · Disponible 24/7</p>
                         </div>
                         <div style={{ position:"relative", marginLeft:"auto", cursor:"pointer" }}
@@ -590,7 +590,7 @@ export default function IAPage() {
                   <button
                     onClick={()=>setHoveredC(isOpen ? null : `asu-${i}`)}
                     style={{ width:"100%", display:"flex", alignItems:"center", justifyContent:"space-between", padding:"1.2rem 1.5rem", background:isOpen?"#7a2531":"#fff", border:"none", cursor:"pointer", gap:"1rem", textAlign:"left", transition:"background 0.25s" }}>
-                    <span style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.95rem", color:isOpen?"#fff":"#333" }}>{item.titulo}</span>
+                    <span style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"1.05rem", color:isOpen?"#fff":"#333" }}>{item.titulo}</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={isOpen?"#fff":"#7a2531"} strokeWidth="2.5" strokeLinecap="round"
                       style={{ flexShrink:0, transition:"transform 0.25s", transform:isOpen?"rotate(180deg)":"rotate(0)" }}>
                       <path d="m6 9 6 6 6-6"/>
@@ -609,7 +609,7 @@ export default function IAPage() {
           {/* Botón video alianza */}
           <div style={{ textAlign:"center" }}>
             <button onClick={()=>setVideoOpen(true)} className="btn-red"
-              style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", padding:"0.8rem 2rem", fontSize:"0.9rem" }}>
+              style={{ display:"inline-flex", alignItems:"center", gap:"0.6rem", padding:"0.8rem 2rem", fontSize:"1.05rem" }}>
               ▶ Conoce nuestra alianza ASU
             </button>
           </div>
@@ -624,14 +624,14 @@ export default function IAPage() {
               <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"1rem", lineHeight:1.2 }}>
                 Invierte en tu futuro con el respaldo de la UAG
               </h2>
-              <p style={{ fontSize:"0.9rem", color:"#555", lineHeight:1.75, marginBottom:"1.5rem" }}>
+              <p style={{ fontSize:"1.05rem", color:"#555", lineHeight:1.75, marginBottom:"1.5rem" }}>
                 Conoce las opciones de apoyo que la UAG tiene para ti. Al inscribirte en el momento indicado, podrás acceder a <strong>beca + bono</strong>, además de contar con alternativas de financiamiento a través de <strong>LAUDEX</strong>, para que nada detenga tu desarrollo profesional.
               </p>
               <div style={{ display:"flex", flexDirection:"column", gap:"0.7rem", marginBottom:"1.5rem" }}>
                 {["Inscríbete a tiempo y obtén beca + bono disponibles para nuevo ingreso","Opciones de financiamiento educativo con LAUDEX","Asesoría personalizada para encontrar la alternativa que mejor se adapte a tu perfil"].map((t,i)=>(
                   <div key={i} style={{ display:"flex", alignItems:"center", gap:"0.7rem" }}>
-                    <span style={{ color:"#f59700", fontWeight:700, fontSize:"1rem", flexShrink:0 }}>✓</span>
-                    <span style={{ fontSize:"0.88rem", color:"#555" }}>{t}</span>
+                    <span style={{ color:"#f59700", fontWeight:700, fontSize:"1.05rem", flexShrink:0 }}>✓</span>
+                    <span style={{ fontSize:"0.93rem", color:"#555" }}>{t}</span>
                   </div>
                 ))}
               </div>
@@ -641,13 +641,13 @@ export default function IAPage() {
               <div style={{ position:"absolute", top:"-14px", left:"2rem", background:"#f59700", color:"#fff",
                 width:"36px", height:"36px", borderRadius:"50%", display:"flex", alignItems:"center",
                 justifyContent:"center", fontSize:"1.4rem", fontWeight:900, lineHeight:1 }}>❝</div>
-              <p style={{ fontSize:"0.95rem", color:"#333", lineHeight:1.75, fontStyle:"italic", marginBottom:"1.2rem", marginTop:"0.5rem" }}>
+              <p style={{ fontSize:"1.05rem", color:"#333", lineHeight:1.75, fontStyle:"italic", marginBottom:"1.2rem", marginTop:"0.5rem" }}>
                 "Estudiar en UAG Online me permitió seguir trabajando mientras completaba mi carrera. El Coach Académico fue clave — nunca me sentí solo en el proceso."
               </p>
               <div style={{ display:"flex", alignItems:"center", gap:"0.8rem" }}>
                 <div style={{ width:"44px", height:"44px", borderRadius:"50%", background:"#7a2531", display:"flex", alignItems:"center", justifyContent:"center", fontFamily:"'Outfit',sans-serif", fontWeight:800, color:"#fff", fontSize:"1.1rem", flexShrink:0 }}>M</div>
                 <div>
-                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.88rem", color:"#333" }}>Miguel A. Ramírez</p>
+                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.93rem", color:"#333" }}>Miguel A. Ramírez</p>
                   <p style={{ fontSize:"0.76rem", color:"#888" }}>Egresado UAG Online · Ing. en Sistemas</p>
                 </div>
                 <div style={{ marginLeft:"auto", textAlign:"right" }}>
@@ -713,7 +713,7 @@ export default function IAPage() {
                 </div>
                 {/* Info del testimonio */}
                 <div style={{ padding:"0.9rem 1rem", background:"#fff" }}>
-                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.88rem", color:"#333", marginBottom:"0.2rem" }}>{v.nombre}</p>
+                  <p style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.93rem", color:"#333", marginBottom:"0.2rem" }}>{v.nombre}</p>
                   <p style={{ fontSize:"0.76rem", color:"#888" }}>{v.programa}</p>
                 </div>
               </div>
@@ -744,7 +744,7 @@ export default function IAPage() {
       <section style={{ padding:"4rem 2rem", background:"#f9f9f9", borderTop:"3px solid #f59700" }}>
         <div style={{ maxWidth:"1200px", margin:"0 auto" }}>
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.4rem,3vw,2rem)", fontWeight:800, color:"#333", marginBottom:"0.3rem" }}>Plan de estudios</h2>
-          <p style={{ fontSize:"0.84rem", color:"#888", marginBottom:"0.5rem" }}>Programa Cuatrimestral · 12 Cuatrimestres · 4 años</p>
+          <p style={{ fontSize:"0.89rem", color:"#888", marginBottom:"0.5rem" }}>Programa Cuatrimestral · 12 Cuatrimestres · 4 años</p>
           <div style={{ width:"60px", height:"3px", background:"#f59700", marginBottom:"1.5rem" }} />
 
           {/* ── DESKTOP: grid de tarjetas ── */}
@@ -768,7 +768,7 @@ export default function IAPage() {
                     <div style={{ width:"36px", height:"36px", borderRadius:"50%",
                       background: isHov?"rgba(255,255,255,0.2)":(isRed?"#7a2531":"#f59700"),
                       display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
-                      <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.9rem", fontWeight:900, color:"#fff" }}>
+                      <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.05rem", fontWeight:900, color:"#fff" }}>
                         {String(item.c).padStart(2,"0")}
                       </span>
                     </div>
@@ -811,11 +811,11 @@ export default function IAPage() {
                       <div style={{ width:"34px", height:"34px", borderRadius:"50%",
                         background: isOpen?"rgba(255,255,255,0.2)":accent,
                         display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}>
-                        <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.88rem", fontWeight:900, color:"#fff" }}>
+                        <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.93rem", fontWeight:900, color:"#fff" }}>
                           {String(item.c).padStart(2,"0")}
                         </span>
                       </div>
-                      <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.85rem", fontWeight:700,
+                      <span style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.9rem", fontWeight:700,
                         color: isOpen?"#fff":accent, textTransform:"uppercase", letterSpacing:"0.04em" }}>
                         Cuatrimestre {item.c}
                       </span>
@@ -835,7 +835,7 @@ export default function IAPage() {
                         <div key={j} style={{ display:"flex", alignItems:"flex-start", gap:"0.6rem", marginBottom:"0.55rem" }}>
                           <span style={{ width:"6px", height:"6px", borderRadius:"50%", flexShrink:0,
                             marginTop:"5px", background:accent }} />
-                          <span style={{ fontSize:"0.84rem", color:"#444", lineHeight:1.5 }}>{m}</span>
+                          <span style={{ fontSize:"0.89rem", color:"#444", lineHeight:1.5 }}>{m}</span>
                         </div>
                       ))}
                     </div>
@@ -862,8 +862,8 @@ export default function IAPage() {
               <div key={i} className={`paso-card ${admVisible?"visible":""}`}
                 style={{ transitionDelay:`${i*0.12}s` }}>
                 <div className="paso-num">{p.n}</div>
-                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"0.9rem", color:"#333", marginBottom:"0.7rem", lineHeight:1.4 }}>{p.t}</h3>
-                <p style={{ fontSize:"0.82rem", color:"#666", lineHeight:1.65, whiteSpace:"pre-line" }}>{p.d}</p>
+                <h3 style={{ fontFamily:"'Outfit',sans-serif", fontWeight:700, fontSize:"1.05rem", color:"#333", marginBottom:"0.7rem", lineHeight:1.4 }}>{p.t}</h3>
+                <p style={{ fontSize:"0.87rem", color:"#666", lineHeight:1.65, whiteSpace:"pre-line" }}>{p.d}</p>
                 {p.cta && (
                   <a href="https://admision.uag.mx" target="_blank" rel="noopener noreferrer" style={{ display:"inline-block", marginTop:"1rem" }}>
                     <button className="btn-orange" style={{ fontSize:"0.8rem", padding:"0.55rem 1.1rem" }}>Inicia tu solicitud aquí</button>
@@ -905,11 +905,11 @@ export default function IAPage() {
           <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(1.5rem,4vw,2.4rem)", fontWeight:900, color:"#333", marginBottom:"0.8rem", lineHeight:1.1 }}>
             ¿Listo para diseñar el futuro con IA?
           </h2>
-          <p style={{ fontSize:"0.95rem", color:"#777", marginBottom:"2.5rem", lineHeight:1.7 }}>
+          <p style={{ fontSize:"1.05rem", color:"#777", marginBottom:"2.5rem", lineHeight:1.7 }}>
             Inicio 7 de septiembre de 2026 · Beca + Bono disponibles
           </p>
           <a href="#formulario">
-            <button className="btn-orange" style={{ padding:"1rem 3rem", fontSize:"1rem", letterSpacing:"0.06em" }}>
+            <button className="btn-orange" style={{ padding:"1rem 3rem", fontSize:"1.05rem", letterSpacing:"0.06em" }}>
               HABLA CON UN ASESOR
             </button>
           </a>
@@ -924,7 +924,7 @@ export default function IAPage() {
 
       {/* ── STICKY BAR ── */}
       <div className={`sticky-bar ${scrollY>400?"show":""}`}>
-        <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.85rem", fontWeight:600, color:"#fff" }}>
+        <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.9rem", fontWeight:600, color:"#fff" }}>
           🎓 Ing. en Inteligencia Artificial Online · <span style={{ color:"#f59700" }}>Beca + Bono disponibles</span>
         </p>
         <a href="#formulario">
