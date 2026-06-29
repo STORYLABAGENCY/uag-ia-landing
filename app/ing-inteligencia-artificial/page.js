@@ -65,9 +65,10 @@ const HABILIDADES = [
 ];
 
 const CAMPO = [
-  "Científico de Datos","Ingeniero de Machine Learning","Desarrollador de IA",
-  "Especialista en NLP","Analista de Big Data","Arquitecto de Sistemas Inteligentes",
-  "Investigador en IA","Consultor de Transformación Digital",
+  "Científico de Datos","Ingeniero de Machine Learning",
+  "Especialista en IA Generativa","Ingeniero de Visión Artificial",
+  "Especialista en Procesamiento de Lenguaje Natural","Desarrollador de Sistemas Inteligentes",
+  "Consultor de Transformación Digital",
 ];
 
 const MODALIDAD = [
@@ -331,7 +332,7 @@ export default function IAPage() {
         {/* IZQUIERDA — imagen, oculta en móvil */}
         <div className="hero-img-col" style={{ position:"relative", overflow:"hidden", minHeight:"480px" }}>
           <img
-            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/Online-.png"
+            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/AI.png"
             alt="Estudiante UAG Online"
             style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center 30%", display:"block" }}
           />
@@ -374,9 +375,9 @@ export default function IAPage() {
           {/* Métricas de social proof — MEJORA 5 */}
           <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:"1rem" }}>
             {[
-              { num:"9/10", label:"egresados consigue empleo en menos de 1 año", color:"#7a2531" },
-              { num:"90%", label:"de estudiantes obtiene beca o apoyo financiero", color:"#f59700" },
-              { num:"100%", label:"online — sin horarios rígidos ni clases obligatorias", color:"#f59700" },
+              { num:"100%", label:"Online: Estudia desde cualquier lugar con clases en vivo y grabadas", color:"#7a2531" },
+              { num:"12", label:"Cuatrimestres: Concluye tu ingeniería en 4 años", color:"#f59700" },
+              { num:"3", label:"Rutas de Especialización: Ciencia de Datos, NLP y Visión Artificial", color:"#7a2531" },
             ].map((m,i)=>(
               <div key={i} style={{ padding:"1.2rem", background:"#f9f9f9", borderRadius:"10px", border:`2px solid ${m.color}22` }}>
                 <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"1.8rem", fontWeight:900, color:m.color, lineHeight:1, marginBottom:"0.3rem" }}>{m.num}</p>
@@ -671,7 +672,7 @@ export default function IAPage() {
           </div>
           <div style={{ width:"50px", height:"3px", background:"#f59700", margin:"0 auto 2.5rem" }} />
           <div className="stats-ia-grid" style={{ display:"grid", gridTemplateColumns:"repeat(6,1fr)", gap:"1rem" }}>
-            {[["90","años de prestigio"],["44","programas online"],["1,777","alumnos activos"],["567","egresados"],["+200","convenios empresariales"],["5★","QS Stars"]].map(([n,l],i)=>(
+            {[["90","años de prestigio"],["42","programas online"],["1,777","alumnos activos"],["567","egresados"],["+200","convenios empresariales"],["5★","QS Stars"]].map(([n,l],i)=>(
               <div key={i} style={{ textAlign:"center", padding:"1.5rem 0.8rem", background:"#fff", borderRadius:"8px", border:"1px solid #eee", boxShadow:"0 2px 8px rgba(0,0,0,0.05)", transition:"transform 0.2s, box-shadow 0.2s" }}
                 onMouseEnter={e=>{ e.currentTarget.style.transform="translateY(-3px)"; e.currentTarget.style.boxShadow="0 6px 20px rgba(122,37,49,0.12)"; e.currentTarget.style.borderColor="#f59700"; }}
                 onMouseLeave={e=>{ e.currentTarget.style.transform="none"; e.currentTarget.style.boxShadow="0 2px 8px rgba(0,0,0,0.05)"; e.currentTarget.style.borderColor="#eee"; }}>
@@ -908,7 +909,7 @@ export default function IAPage() {
             ¿Listo para diseñar el futuro con IA?
           </h2>
           <p style={{ fontSize:"0.95rem", color:"#777", marginBottom:"2.5rem", lineHeight:1.7 }}>
-            Inicio 7 de septiembre de 2026 · Beca + Bono disponibles · Sin examen de admisión
+            Inicio 7 de septiembre de 2026 · Beca + Bono disponibles
           </p>
           <a href="#formulario">
             <button className="btn-orange" style={{ padding:"1rem 3rem", fontSize:"1rem", letterSpacing:"0.06em" }}>
