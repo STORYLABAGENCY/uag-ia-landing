@@ -329,7 +329,7 @@ export default function IAPage() {
         {/* IZQUIERDA — imagen, oculta en móvil */}
         <div className="hero-img-col" style={{ position:"relative", overflow:"hidden", minHeight:"480px" }}>
           <img
-            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/AI.png"
+            src="https://numjvtzzfjzxquooncvv.supabase.co/storage/v1/object/public/assets/BACK.png"
             alt="Estudiante UAG Online"
             style={{ width:"100%", height:"100%", objectFit:"cover", objectPosition:"center 30%", display:"block" }}
           />
