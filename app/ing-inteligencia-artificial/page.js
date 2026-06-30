@@ -955,13 +955,13 @@ export default function IAPage() {
                 jq.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
                 jq.onload = function() {
                   var s = document.createElement('script');
-                  s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26';
+                  s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLL26';
                   document.body.appendChild(s);
                 };
                 document.head.appendChild(jq);
               } else {
                 var s = document.createElement('script');
-                s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLG26';
+                s.src = 'https://www.uag.mx/api/formas/forma_v2?f=o2n1ydBagK&t=uagForma&campus=VIR&nivel=LI&programa=OLL26';
                 document.body.appendChild(s);
               }
             }
