@@ -518,11 +518,21 @@ export default function IAPage() {
                   <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:"2rem" }} className="asu-chat-grid">
                     <div>
                       <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8, marginBottom:"1rem" }}>
-                        Tienes la oportunidad de acelerar tus estudios de maestría durante tu licenciatura, a través de revalidación de 2 materias con <strong>Thunderbird School of Global Management</strong>.
+                        Tienes la oportunidad de acelerar tus estudios de maestría durante tu licenciatura, a través de revalidación de 2 materias optativas con los siguientes programas de maestría de ASU:
                       </p>
-                      <p style={{ fontSize:"0.92rem", color:"#555", lineHeight:1.8 }}>
-                        Educación universitaria de calidad sin fronteras. Plataforma digital, docentes expertos y titulación oficial UAG para impulsar tu carrera desde donde estés.
-                      </p>
+                      <ul style={{ listStyle:"none", padding:0, display:"flex", flexDirection:"column", gap:"0.6rem" }}>
+                        {[
+                          "Master of Project Management (MPM) — College of Integrative Sciences and Arts",
+                          "Master of Global Management (MGM) — Thunderbird School of Global Management",
+                          "Master of Leadership and Management (MLM) — Thunderbird School of Global Management",
+                          "MS in Artificial Intelligence in Business — W.P. Carey School of Business",
+                        ].map((p,i)=>(
+                          <li key={i} style={{ display:"flex", alignItems:"flex-start", gap:"0.6rem", fontSize:"0.87rem", color:"#555", lineHeight:1.5 }}>
+                            <span style={{ color:"#7a2531", fontWeight:700, flexShrink:0 }}>•</span>
+                            {p}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                     <div style={{ background:"#f9f9f9", borderRadius:"12px", padding:"1.5rem", border:"1px solid #eee" }}>
                       <p style={{ fontFamily:"'Outfit',sans-serif", fontSize:"0.74rem", fontWeight:700, color:"#f59700", letterSpacing:"0.1em", textTransform:"uppercase", marginBottom:"0.8rem" }}>BENEFICIO EXCLUSIVO</p>
@@ -531,7 +541,7 @@ export default function IAPage() {
                         <span style={{ fontSize:"1.05rem", color:"#555", lineHeight:1.4 }}>materias revalidables para tu maestría desde la licenciatura</span>
                       </div>
                       <p style={{ fontSize:"0.87rem", color:"#888", lineHeight:1.6, borderTop:"1px solid #eee", paddingTop:"0.8rem" }}>
-                        A través de <strong style={{ color:"#7a2531" }}>Thunderbird School of Global Management</strong>, una de las escuelas de negocios más reconocidas del mundo.
+                        Revalida materias y obtén tu maestría internacional en menos tiempo, con el respaldo de <strong style={{ color:"#7a2531" }}>Arizona State University</strong>.
                       </p>
                     </div>
                   </div>
